@@ -1,0 +1,6 @@
+a=input("Enter your name:")
+b=input("Enter your age:")
+c=input("Enter your DOB:")
+d=input("Enter your location:")
+e=input("Enter your college name:")
+print('"'"hello,my name is",a,".I am",b,"years old and was born on",c,".currently", "I am located in",d,"and i completed my degree at",e,'"')

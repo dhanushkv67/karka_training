@@ -1,0 +1,11 @@
+#print "hello"
+print("hello,world")
+print(5)
+print("5")
+print(5+2)
+print("75"+"67")
+print(75+67)
+print("dha+nu")
+print("dhanu"+"sh")
+#print(70+"10")
+#print("70"+10)
