@@ -23,11 +23,11 @@ while ans<4:
     print('1. Add keychain to order\n2. Remove keychain from order\n3. View current order\n4. Checkout')
     ans=int(input('please enter your choice'))
     if ans==1:
-        ans1=int(input('you have 0 keychains. How many to add?'))
+        ans1=int(input('you have 0 keychains. How many to add? '))
         add_keychains(ans1)
         print('now you have',my_keychains,' keychains')
     if ans==2:
-        ans2=int(input('you have'+str(my_keychains)+'keychains. How many to remove?'))
+        ans2=int(input('you have'+str(my_keychains)+'keychains. How many to remove? '))
         remove_keychains(ans2)
         print('now u have',my_keychains,'keychains')
     if ans==3:
