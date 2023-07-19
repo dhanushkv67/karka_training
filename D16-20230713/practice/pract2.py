@@ -1,0 +1,9 @@
+marks={'tamil':100,
+'engish':80,
+'maths':70,
+'science':68,
+'social':79}
+print(marks)
+print(marks.items())
+print(marks.values())
+print(marks.keys())
