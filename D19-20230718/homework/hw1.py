@@ -8,20 +8,22 @@ result={}
 for i in items:
     if i['category']=='fruits':
         fruit=i['name']
-        fruits.append(fruit)
+        fruits+=[fruit]
+        # fruits.append(fruit)
     else:
         if i['category']=='vegetables':
             vegetable=i['name']
-            vegetables.append(vegetable)
+            vegetables+=[vegetable]
+            # vegetables.append(vegetable)
 a={'fruits':fruits, 'vegetable':vegetable}
 result['fruits']=fruits
 result['vegetable']=vegetables
 print(result)
-list={}
-for i in items:
-    if i['category']=='fruits':
-        list['fruits']=i['name']
-        print(list)
+# list={}
+# for i in items:
+#     if i['category']=='fruits':
+#         list['fruits']=i['name']
+#         print(list)
 
 
 
