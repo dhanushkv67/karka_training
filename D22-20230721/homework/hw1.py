@@ -41,42 +41,19 @@ def cal_elect_bill(eb_list):
             consumer_data['amount_payable']=amount
         consumer_details.append(consumer_data)
     return consumer_details
-eb_result=cal_elect_bill(eb_reading)
-# print(eb_result)
-files=open('/home/dhanu/dhanu/eb_bills/'+name+'.txt','w+')
-for info in eb_result:
-    for key,value in info.items():
-    # for value in info:
-    #     # details=value+':',info[value]
-    #     # str_details=details
-    #     key_detail=str(value)
-    #     value_detail=str(info[value])
-        # print(str_details)
-        # files=open('/home/dhanu/dhanu/eb_bills/'+name+'.txt','a')
-        # files.write(key_detail+':' + value_detail+'\n')
-        # files.close()
-        files=open('/home/dhanu/dhanu/eb_bills/'+name+'.txt','a')
-        files.write(key+':'+str(value)+'\n')
-        files.close()
-        # print(details)
-    files=open('/home/dhanu/dhanu/eb_bills/'+name+'.txt','a')
-    files.write('\n')
+eb_bill=cal_elect_bill(eb_reading)
+s_eb_bill=str(eb_bill)
+import json
+
+ans=input('in which format u like to save your data\n\t1)json\t2)dict\nanswer:')
+answer=ans.lower()
+if answer=='json' :
+    j_eb_bill=json.dumps(s_eb_bill)
+    files=open('/home/dhanu/dhanu/eb_bills/'+name,'w')
+    files.write(j_eb_bill)
     files.close()
-files=open('/home/dhanu/dhanu/eb_bills/'+name+'.txt','r')
-print(files.read())
-        
-
-
-# name='dhanus'
-# files=open('/home/dhanu/dhanu/'+name,'w+')
-# files.write('ho')
-# files.close()
-# files=open('/home/dhanu/dhanu/'+name,'r')
-# print(files.read())
-
-
-
-
-
-
+elif answer=='dict':
+    files=open('/home/dhanu/dhanu/eb_bills/'+name,'w')
+    files.write(s_eb_bill)
+    files.close()
 
