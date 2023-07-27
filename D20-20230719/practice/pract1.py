@@ -6,6 +6,7 @@ files=open("/home/dhanu/dhanu/dhanush.txt","r")
 for i in files:
     # print(i)
     print(i.split())
+    
 # files=open("/home/dhanu/dhanu/dhanush.txt","a")
 # files.write('i am dhanush')
 # files.close()

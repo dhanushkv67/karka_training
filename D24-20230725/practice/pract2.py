@@ -34,9 +34,20 @@ from datetime import datetime
 # print(s_time)
 # print(cur_datetime)
 from pytz import timezone
-utc=datetime.now(timezone('utc'))
-utc=utc.strftime('%z')
-asia=datetime.now(timezone('Asia/Kolkata'))
-print(asia)
-print(utc)
+# utc=datetime.now(timezone('utc'))
+# utc=utc.strftime('%z')
+# asia=datetime.now(timezone('Asia/kolkata'))
+# india=datetime.now(timezone('ist'))
+# print(asia)
+# # print(utc)
 
+date_time=datetime.now()
+s_datetime=date_time.strftime('%y')
+# print(type(s_datetime))
+date='24 december 2022'
+o_date=date_time.strptime(date,'%d %B %Y')
+print(o_date)
+from datetime import timedelta
+# end_date=o_date+timedelta(days=5)
+end_date=o_date+timedelta(days=5)
+print(end_date)
