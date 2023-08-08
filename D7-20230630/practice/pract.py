@@ -21,3 +21,6 @@ print(is_eligible)
 #  print("the student is eligible")
 # else:
 #     print("the student is not eligible")
+# b=30
+# a=b<20
+# print(type(a))
