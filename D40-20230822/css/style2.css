@@ -1,0 +1,31 @@
+*{text-align: center;}
+header{
+    padding:20px;
+    background-color: lightblue;
+}
+nav{
+    padding:20px;
+    background-color: yellowgreen;
+}
+.box1{
+    padding:127px 10px;
+    background-color: blueviolet;
+    display: inline-block;
+    vertical-align: top;
+}
+.box2{
+    padding:20px;
+    background-color: lightgreen;
+    display: inline-block;
+}
+.child1{
+    padding:31px 435px;
+    background-color: black;
+    border:5px solid white;
+    color:whitesmoke
+
+}
+footer{
+    padding:20px;
+    background-color: lightblue;
+}

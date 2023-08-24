@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0
+}
+.one{
+    display: inline-block;
+    width:52%;
+    /* border:1px solid black */
+}
+.two{
+    display: inline-block;
+    width:45%;
+    vertical-align: top;
+}
+.one img{
+    width:100%
+}
+.two h1{
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+.two p{
+    font-size: 30px;
+    line-height: 40px;
+}
+button{
+    width:20%;
+    padding: 10px 0px;
+    background-color:#6D416D;
+    border:none;
+    border-radius: 10px;
+    margin:30px 0px
+}

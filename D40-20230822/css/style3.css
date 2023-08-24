@@ -1,0 +1,33 @@
+*{text-align: center;}
+header{
+    padding:20px;
+    background-color: lightpink;
+    border:5px solid white;
+}
+nav{
+    padding:20px;
+    background-color: aquamarine;
+    border:5px solid white
+}
+.box1{
+    padding:30px;
+    background-color: rgb(177, 177, 61);
+    border:5px solid white
+}
+.box2{
+    width:33%;
+    padding:20px 0px;
+    background-color:chartreuse;
+    display: inline-block;
+}
+footer{
+    padding:20px;
+    background-color: aqua;
+    border:5px solid white
+}
+.container{
+    padding:5px 91px
+}
+.outer{
+    border:5px solid white
+}

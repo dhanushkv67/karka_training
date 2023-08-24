@@ -1,0 +1,56 @@
+*{
+    text-align: center;
+}
+header{
+    padding:10px;
+    background-color: aqua;
+}
+.box1{
+    width:68%;
+    padding:84px 0px;
+    background-color: aqua;
+    border:5px solid white;
+    display: inline-block;
+    vertical-align: top;
+}
+.box2{
+    width:30%;
+    border:5px solid white;
+    display: inline-block;
+}
+.child1{
+    padding:30px 0px;
+    background-color: aqua;
+}
+.child2{
+    padding:20px 0px;
+    background-color: yellowgreen;
+}
+.box3{
+    padding:10px;
+    border:5px solid  white;
+    background-color: aqua;
+}
+.box4{
+    width: 68%;
+    padding:15px 0px;
+    background-color: aqua;
+    border:0px solid  white;
+    display: inline-block
+}
+.box5{
+    width:28%;
+    padding:15px;
+    background-color: yellowgreen;
+    border:6px solid  white;
+    display: inline-block
+}
+footer{
+    padding:10px;
+    background-color: aqua;
+    border:5px solid  white
+}
+section{
+    padding:10px;
+    background-color: white;
+}

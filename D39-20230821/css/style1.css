@@ -1,0 +1,31 @@
+body{
+    color:rgb(12, 12, 12)
+}
+.box1{
+    padding:20px;background-color: lightpink;
+}
+.box2{
+    padding:82px 232px;background-color: lightpink;border:10px solid white;display:inline-block;
+    vertical-align: top;
+}
+.box3{
+    display: inline-block;
+}
+.child1{
+    padding:32px 272px;background-color: lightpink;border:10px solid white
+}
+.child2{padding:10px 10px; background-color: rgb(221, 210, 58);border:10px solid white
+}
+.box4{
+    padding:30px;background-color:lightpink;border:10px solid white 
+}
+.box5{
+    padding:16px 230px;background-color: lightpink;border:10px solid white;display: inline-block;
+}
+.box6{
+    padding:16px 263px;background-color: rgb(223, 181, 66);border: 10px solid white;display:inline-block 
+}
+.box7{
+    padding:8px;background-color: lightpink;
+}
+h3{text-align: center;}

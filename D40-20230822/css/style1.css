@@ -1,0 +1,25 @@
+*{text-align: center;}
+header{
+    padding:15px;
+    background-color: aquamarine;
+}
+nav{
+    padding:15px;
+    background-color: blueviolet;
+}
+section{
+    padding:20px;
+    background-color: aquamarine;
+}
+.box1{
+    padding:15px 277px;
+    background-color: black;
+    display: inline-block;
+    border:2px solid white
+}
+footer{
+    padding:15px;
+    background-color: blueviolet;}
+h2{
+    color: white;
+}
