@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0
+}
+body{
+    padding:20px
+}
+.body{
+    background-color: bisque;
+}
+header h1{
+    text-align: center;
+    padding:10px
+}
+nav{
+    background-color: lightpink;
+    width:96%;
+    margin:20px auto;
+    padding:20px;
+}
+nav h3{
+    display: inline-block;
+    margin-right: 157px;
+    
+}
+button{
+    width:49px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding:2px;
+    border-radius: 5px;
+}
+input{
+    padding:2px
+}
+.section-left{
+    width:70%;
+    display: inline-block;
+    margin-right:15px;
+}
+.section-right{
+    width:28%;
+    display: inline-block;
+    background-color: lightpink;
+    vertical-align: top;
+}

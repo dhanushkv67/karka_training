@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-div{
+            display: flex;
+            flex-direction:row;
+            background-color: yellowgreen;
+            justify-content: center;
+            align-items: center;
+            height: 200px;                     
+        }
+        
+        /* justify-content:
+            align-center:
+            values:flex-start,flex-end,space-around,space-between,space-evenly */
+
+        .sub-div{
+            background-color: rgb(230, 76, 76);
+            padding:20px 0px;
+            width:10%;
+            border: 2px solid white;
+            text-align: center;
+            /* align-self: center; */
+        }
+        header{
+            background-color: blue;
+        }
+        footer{
+            background-color: rgb(187, 141, 185);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>header</h1>
+    </header>
+    <section>
+        <div class="main-div">
+            <div class="sub-div">1</div>
+            <div class="sub-div">2</div>
+            <div class="sub-div">3</div>
+        </div>
+    </section>
+    <footer>
+        <h1>footer</h1>
+    </footer>
+</body>
+</html>

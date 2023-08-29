@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding:0
+}
+header{
+    position: fixed;
+    margin-bottom: 13px;
+    top:0;
+    width:100%
+}
+.section-left{
+    /* display: inline-block; */
+    width:20%;
+    height: 500px;
+    vertical-align: top;
+    position: fixed;
+    background-color: rgb(192, 151, 230);
+}
+.section-right{
+    /* display: inline-block; */
+    width:78%;
+    position:absolute;
+    left:277px;
+    z-index: -1;
+}
+section{
+    margin-top: 60px;
+}
+img{
+    width:100%
+}

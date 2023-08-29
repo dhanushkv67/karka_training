@@ -1,0 +1,18 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    background-color: rgb(155, 117, 155);
+    text-align: center;
+    /* display: flex; */
+    height: 500px;
+
+}
+img{
+    width:5%
+}
+.google{
+    
+}
