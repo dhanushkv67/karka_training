@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding:0
+}
+section{
+    display: flex;
+    padding:50px;
+}
+.sec-left{
+    width:70%;
+    margin-left:82px;
+}
+.sec-right{
+    width:30%;
+    margin-right: 38px;
+}
+.name{
+    margin-bottom: 80px;
+}
+.name span{
+    font-size: 54px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+.edu span{
+    margin-right:15px
+}
+.edu-t{
+    margin: 10px 0;
+}
+.edu{
+    margin:10px 0
+}
+.bold{
+    font-weight: bold;
+}
+h1{
+    margin:20px 0;
+    color: rgba(137, 43, 226, 0.685);
+}
+p{
+    font-size: 20px;
+}
+span{
+    font-size: 20px;
+    margin:10px 0
+}
+.flex-c{
+    display: flex;
+    flex-direction: column;
+}
+.s-r-top{
+    margin:10px 0 87px 0;
+    display: flex;
+    flex-direction: column;
+
+}

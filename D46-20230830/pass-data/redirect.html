@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    welcome <span id="result"></span>
+    
+</body>
+<script>
+    // const name=window.location.search
+    // console.log(name.getAttribute("name"))
+    // console.log(localStorage.getItem('passvalue'))
+    // window.onload=function(){
+    //     document.getElementById("result").innerHTML=localStorage.getItem("passvalue")}
+    window.onload=function(){
+        var value=localStorage.getItem("myvalue");
+        document.getElementById("result").innerHTML=value;
+    };
+</script>
+</html> 

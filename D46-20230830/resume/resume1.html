@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="resume1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    <section>
+        <div class="sec-left">
+            <div class="name">
+                <span id="1stname" name="all"></span>
+                <span id="2ndname" name="all"></span>
+            </div>
+            <div class="obj">
+                <h1>OBJECTIVE</h1>
+                <p>A passionate software engineer looking to use my extensive knowledge</br>
+                    and experience to contribute to the growth of the Company.</p>
+            </div>
+            <div class="education">
+                <h1>EDUCATION</h1>
+                <div class="edu">
+                    <div class="edu-t">
+                        <span id="school" name="all" class="bold"></span>,
+                        <span id="s-locat" name="all"></span>
+                    </div>
+                    <div class="edu-b">
+                        <span id="s-passdout"name="all"></span>,
+                        <span id="s-percentage"name="all"></span>%
+                    </div>
+                </div>
+                <div class="edu">
+                    <div class="edu-t">
+                        <span id="ug"name="all" class="bold"></span>,
+                        <span id="ug-locat" name="all"></span>
+                    </div>
+                    <div class="edu-b">
+                        <span id="ug-passdout" name="all"></span>,
+                        <span id="ug-percentage" name="all"></span>%
+                    </div>
+                </div>
+                <div class="edu">
+                    <div class="edu-t">
+                        <span id="pg" name="all" class="bold"></span>,
+                        <span id="pg-locat" name="all"></span>
+                    </div>
+                    <div class="edu-b">
+                        <span id="pg-passdout" name="all"></span>,
+                        <span id="pg-percentage" name="all"></span>%
+                    </div>
+                </div>   
+            </div>
+            <div class="personal">
+                <h1>PERSONAL DETAILS</h1>
+                <div class="p-all" style="display: flex;gap:20px">
+                    <div class="p-left flex-c"style="gap:1px; flex-wrap:wrap; width:122px">
+                        <span>NAME</span>
+                        <span>AGE</span>
+                        <span>DOB</span>
+                        <span>MARTIAL STATUS</span>
+                        <span>MOBILE</span>
+                    </div>
+                    <div class="p-right flex-c">
+                        <span id="1stname" name="all"></span>
+                        <span id="2ndname" name="all"></span>
+                        <span id="dob" name="all"></span>
+                        <span style="margin-top: 36px;">single</span>
+                        <span id="number" name="all"></span>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="sec-right">
+            <div class="s-r-top">
+                <span id="number" name="all"></span>
+                <span id="email" name="all"></span>
+            </div>
+            <div class="interest">
+                <h1>INTEREST</h1>
+                <span id="hobbies" name="all"></span>
+            </div>
+            <div class="skills">
+                <h1>SKILLS</h1>
+                <span id="skill" name="all"></span>
+            </div>
+            <div class="languages">
+                <h1>LANGUAGES</h1>
+                <ol>
+                    <li id="tamil" name="all"></li>
+                    <li id="english" name="all"></li>
+                    <li id="hindi" name="all"></li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <script>
+        window.onload=function(){
+            var str_1=localStorage.getItem("data")
+            var data2=JSON.parse(str_1)
+            var data_id=document.querySelectorAll("div")
+            console.log(data_id.length);
+
+           for(i=0;i<data_id.length;i++){
+            document.getElementsByName("all")[i].innerHTML=data2[document.getElementsByName("all")[i].id]
+           }
+        }
+    </script>
+</body>
+</html>

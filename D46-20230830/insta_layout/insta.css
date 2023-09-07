@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0
+}
+.logo{
+    display: flex;
+    gap: 10px;
+}
+.logo span{
+    place-self: center;
+}
+.logo img{
+    width:36px;
+    height:39px
+}
+.search{
+    display: flex;
+    width:212px;
+    background-color: rgba(128, 128, 128, 0.534);
+    height:31px;
+    border-radius:5px;
+    place-self:center
+
+}
+.search input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid #4f4b4b5c;
+    margin:0 19px;
+    font-size: 19px;
+    width:142px;
+
+}
+.search img{
+    width:31px
+}
+nav img{
+    width:12%;
+    place-items: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.459)
+}
+nav ul{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width:35%
+}
+ul li{
+    list-style: none;
+}
+ul img{
+    width:27%
+}
+section{
+    padding:10px;
+    background-color:  rgba(128, 128, 128, 0.267);
+}
+.section-left{
+    width: 65%;
+    background-color: rgba(128, 128, 128, 0.164);
+    /* display: flex; */
+}
+.story{
+    width:97%;
+    background-color: white;
+    padding:10px;
+    height:92px;
+    display: flex;
+    gap:15px;
+    border:2px solid rgba(128, 128, 128, 0.5)
+}
+.stories{
+    /* display: flex; */
+}
+.stories a img{
+    width:49px;
+    padding:3px;
+    border-radius: 50%;
+    object-fit: cover;
+    height:57px;
+    border:2px solid  rgba(255, 68, 0, 0.548)
+}
+.stories p{
+    width:90%;
+    overflow: hidden;
+    font-size: 14px;
+    height:19px;
+    text-overflow: ellipsis;
+}
+.section-left .post-page{
+    width:100%;
+    /* padding:10px; */
+    margin-top: 15px;
+
+}
+.post{
+    background-color: white;
+}
+.post-title{
+    /* border:2px solid rgba(128, 128, 128, 0.596); */
+    background-color: white;
+}
+.post-title img{
+    width:5%;
+    border-radius: 50%;
+    height:32px;
+    object-fit: contain;
+
+}
+.post-image{
+    width:40%;
+    height:270px
+}
+footer{
+    display: flex;
+}
+.footer img{
+    width:3%
+}
+.footer img .save-icon{
+    place-self: end;
+}

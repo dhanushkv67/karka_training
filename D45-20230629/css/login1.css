@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    color:white
+
+}
+body{
+    padding:10px
+}
+.outer-box{
+    background: url(https://img.freepik.com/free-vector/gradient-abstract-hexagon-shapes-background_23-2149120168.jpg?w=740&t=st=1693383468~exp=1693384068~hmac=a0fe9625f577c752aebc6963dc697944e16f3f655b7c55049a27ea4eba60a169);
+    width:100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-size: cover;
+}
+.box1{
+    background-color: transparent;
+    width:35%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    border:5px solid rgb(202, 192, 192,.5);
+    border-radius: 15px;
+    box-shadow: 0px 0px 50px 0px  black;
+    
+}
+img{
+    width:24%;
+}
+.box1 h1{
+    place-self:center;
+    padding:20px
+}
+.google{
+    display: inline-flex;
+    width:40%;
+    padding:8px;
+    place-content:center ;
+    background-color: aliceblue;
+    margin-right: 30px;
+    border: none;
+    border-radius: 5px;
+}
+.fb{
+    display: inline-flex;
+    width:40%;
+    /* height:20px; */
+    place-content: center;
+    background-color: aliceblue;
+    padding:8px;
+    border: none;
+    border-radius: 5px;
+}
+.login{
+    width: 80%;
+    margin: 20px 55px
+    
+}
+input{
+    height:30px;
+    width:80%;
+    border: none;
+    place-self: center;
+    margin:10px;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    border-color: none;
+    outline: none;
+}
+
+
+button{
+    width:80%;
+    height:50px;
+    /* background-image: linear-gradient(violet,white) ; */
+    font-size: 30px;
+    color:rgb(65, 57, 57);
+    margin: 60px auto;
+    border-radius: 10px;
+    margin: 40px auto;
+    border:none
+}
+h2{
+    margin-left: 50px;
+
+}
+span{
+    color: black;
+    place-self: center;
+}
+.log{
+    margin: 38px auto;
+    border-radius: 10px;
+}
+
+.account{
+    place-self: center;
+}
+button:hover{
+    background-color: rgb(147, 83, 163);
+}
+#output h1{
+    background-color: blueviolet;
+    color: white;
+    width:40%;
+    height: 30px;
+}
