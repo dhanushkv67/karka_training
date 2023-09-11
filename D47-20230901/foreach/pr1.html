@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name" placeholder="name">
+    <input type="number" id="number" placeholder="number">
+    <input type="email" id="email" placeholder="email">
+    <button onclick="get()">submit</button>
+    <select>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+<script>
+     var data={}
+    function get(){
+       var a=document.querySelectorAll("input");
+       console.log(a)
+       a.forEach(input => {
+        data[input.id]=input.value;
+       });
+       console.log(data)
+       a=document.getElementsByTagName("input");
+       console.log(a)
+    }
+</script>
+
+</body>
+</html>

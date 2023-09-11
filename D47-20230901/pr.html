@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="ul">
+        <li>1</li>
+    </ul>
+    <button onclick="get()">add more</button>
+    <script>
+        var ul=document.getElementById("ul")
+        function get(){
+            var li=document.createElement("li")
+            var input=document.createElement("input")
+            var attr=document.createAttribute("id");
+            attr.value="attr"
+            input.setAttributeNode(attr);
+            
+
+            ul.appendChild(li)
+            li.appendChild(input)
+            const id=document.getElementById("")
+            console.log(ul.appendChild(li),id,input.id)
+        }
+    </script>
+</body>
+</html>
