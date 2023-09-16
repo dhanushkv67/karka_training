@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // list
+// of gives elements
+// in gives index
+
+let a=[1,2,3,4];
+// of
+for (i of a){
+  console.log(i)
+}
+// in
+for (i in a){
+  console.log(i)
+}
+
+
+
+
+// object
+// in gives keys in object
+// of gives keys and value
+
+let b={name:"dhanush",age:24};
+// in
+for (i in b){
+//   console.log(b[i])
+  console.log(`key ${i}, value ${b[i]}`)
+};
+
+// of
+for (let[key,value] of Object.entries(b)){
+  console.log(key,value)
+}
+    </script>
+</body>
+</html>

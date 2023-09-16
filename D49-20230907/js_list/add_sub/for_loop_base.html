@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var person=[{name:"dhanush",id:1,skill:['d1','d2','d3'],address:{doorno:5,place:"peruvaili",state:"kk"}},
+           {name:"rabin",id:2,skill:['r1','r2','r3'],address:{doorno:10,place:"vadasery",state:"kk"}},
+           {name:"perumal",id:3,skill:['p1','p2','p3'],address:{doorno:6,place:"vadasery",state:"kk"}}]
+
+//  console.log(person)
+for(i=0;i<person.length;i++){
+  name=person[i].name;
+  id=person[i].id;
+  address=person[i].address;
+  place=address.place;
+  skill=person[i].skill
+//   skill=skill.join()
+  state=person[i].address.state;
+  
+ console.log(` hello my name is ${name} frm ${place} my skills are ${skill} im belong to ${state}` )
+  
+
+
+// function odd_even(a){
+// return  a%2 ? "odd":"even";
+  
+// }
+// a=19
+// console.log(odd_even(a))
+// if(-1){
+//   console.log('if')
+// }
+// else{
+//   console.log('else')
+// }
+
+function amt(age){
+   amount= age<18 ? 100: age<35 ? 70 : 20;
+ return act_amount=amount+100;
+}
+age=20;
+console.log(amt(age))
+
+function name(no){
+  let a=100;
+  a= no%2 && 150;
+  return a
+}
+no=10;
+console.log(name(no))
+}
+    </script>
+</body>
+</html>
