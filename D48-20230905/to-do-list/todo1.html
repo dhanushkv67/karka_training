@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css
+">
+</head>
+<body>
+    <section class="container">
+        <div class="box w-75 mx-auto mt-5">
+        <div class="input-group mb-3">
+            <input id="ans" type="text"  class="form-control bg-transparent border-success" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <button onclick="add()" class="input-group-text btn btn-primary w-25" id="basic-addon2" >add</button>
+        </div>
+        <div class="box2">
+            <ul class="list-group" id="todo_ul">
+            </ul>
+        </div>
+        </div>
+        </section>
+    </header>
+    <script>
+        var todo_result=[];
+        function add(){
+
+            const val=document.getElementById("ans");
+            todo_result.push({"id":todo_result.length,"value":val.value,"status":"not-done"});
+            val.value=" ";
+
+            const str_result =JSON.stringify(todo_result);
+            localStorage.setItem("todo_result",todo_result);
+            show();
+        }
+        function show(){
+            for(i=0;i<todo_result.length;i++){
+                ele =  `<li class="list-group-item list-group-item-action list-group-item-primary position-relative">
+                                        <input class="form-check-input me-3" type="checkbox" value="" id="${todo_result[i].id}">
+                                        <label class="form-check-label" for="${todo_result[i].id}">${todo_result[i].value}</label>
+                                        <i class="bi bi-pencil-square position-absolute top-1 end-0 me-5 text-secondary icon-action"></i>
+                                        <i class="bi bi-trash-fill position-absolute top-1 end-0 me-3 text-secondary icon-action"></i>`;
+                                        let val=document.getElementById("todo_ul");
+        
+                            var li=document.createElement("li");
+                            li.innerHTML=ele;
+                           
+        }
+        let val=document.getElementById("todo_ul");
+        val.appendChild(li)
+           
+            }
+        
+    </script>
+       
