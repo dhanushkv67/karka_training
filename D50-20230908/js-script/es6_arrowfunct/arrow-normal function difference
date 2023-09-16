@@ -1,0 +1,12 @@
+arrow function:                                 formal function:
+
+single line code                                formal writting
+not declarable                                  declarable
+default-variable saving                         traditional way
+not a constructor function                      may change us a constructor function
+adobtable to es6 tech features                  basic js
+arguments no                                    arguments yes
+cannot access function before initialization    can acess before function
+								initializaion
+cannot able to host                             hosting is acceptable
+chain method                                    no chain method 												                          

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let companies = [ { name : 'Microsoft',foundedIn : 1975 },
+        {name:'TATA', foundedIn : 1968 },
+        {name:'Cognizant', foundedIn : 1994 },
+        {name:'Google',foundedIn : 1998 },
+        {name:'Cisco Systems',foundedIn : 1984 },
+        {name:'Accenture',foundedIn : 1989 },
+        {name:'IBM',foundedIn : 1980 },
+        {name:'Comorins',foundedIn : 2019 },  ];
+let company=companies.filter((val,ind)=>{
+ 
+  return val.foundedIn<=1975
+});
+
+for (i of company){
+  console.log(`company name ${i.name} was found on year ${i.foundedIn}`)
+}
+    </script>
+</body>
+</html>

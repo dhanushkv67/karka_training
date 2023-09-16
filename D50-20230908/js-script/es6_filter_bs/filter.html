@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let bikes=[{name:'honda',
+            showroom:90000,
+            on_road:100000,
+            tax:6,
+            mileage:45
+           },
+           {name:'pulser',
+            showroom:110000,
+            on_road:120000,
+            tax:8,
+            mileage:40
+           },
+           {name:'tvs',
+            showroom:70000,
+            on_road:80000,
+            tax:5,
+            mileage:50
+           }
+          ]
+let lowbike=bikes.filter((a,b)=>{
+//  return bikes[b].showroom<100000;
+//  return a.mileage>40
+  return a.mileage>40 && a.tax<8
+  
+}
+                        );
+  
+
+console.log(lowbike)
+    </script>
+</body>
+</html>

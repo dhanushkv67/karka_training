@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let bikes=[
+  {
+    name:"platina",
+    showroom_price:66000,
+    road_price:75000,
+    tax:15,
+    milage:75
+  },
+  {
+    name:"duke",
+    showroom_price:150000,
+    road_price:170000,
+    tax:20,
+    milage:30
+  },
+  {
+    name:"royal_Enfield",
+    showroom_price:200000,
+    road_price:230000,
+    tax:15,
+    milage:35
+  },
+  {
+    name:"dio",
+    showroom_price:75000,
+    road_price:80000,
+    tax:10,
+    milage:45
+  }
+  
+  ]
+let amount=bikes.reduce((acc,val)=>{
+ return acc+ val.road_price
+//     console.log("acc",acc)
+},0)
+console.log(amount)
+    </script>
+</body>
+</html>
