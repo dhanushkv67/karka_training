@@ -1,0 +1,48 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;     
+}
+.navbar{
+    position: sticky !important;
+    top: 0;
+    /* left: 0; */
+    z-index: 100;
+    background-color:rgba(0, 128, 0, 0.478);
+
+}
+.navbar .navbar-brand{
+    font-size: 30px;
+}
+.container a{
+    font-weight:bold;
+    border-bottom: 2px solid transparent;
+}
+.container a:hover{
+    border-bottom: 2px solid black;
+}
+.img-sec{
+    background-image:linear-gradient(rgba(242, 237, 237, .4),rgba(0,0,0,.1)) ,url(https://previews.123rf.com/images/oksix/oksix2007/oksix200700030/150981612-assorted-colorful-organic-spices-and-herbs-in-ceramic-bowls-and-wooden-spoons-on-white-background.jpg);
+    background-size: cover;
+    background-position: center;
+    /* width: 100%; */
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.img-sec h1{
+    font-size: 100px;
+    font-weight: 900;
+    color: rgba(0, 128, 0, 0.724);
+    text-shadow: 5px 0px 0px rgba(128, 128, 128, 0.454);
+    letter-spacing: 3px;
+
+}
+.input-group{
+    width: 30% ;
+    height: 45px ;
+    align-items: center;
+    justify-content: center;
+}
