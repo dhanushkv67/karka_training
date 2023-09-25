@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
+    ">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        .form-check{
+            width: 111px;
+            padding: 0 2px;
+            background-color: rgba(0, 0, 0, 0.561);
+            border: 1px solid rgba(255, 255, 255, 0.595);
+            border-radius: 7px;
+            margin: 25px 44px 0px 57px;
+        }
+        input{
+            margin: 5px 10px 2px !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container p-5 d-flex flex-column align-items-center  rounded-5 bg-primary w-50 mt-5" style="color: rgba(255, 255, 255, 0.759);">
+
+        <div class="d-flex flex-row gap-2" >
+            <h1 class="display-1">stop watch</h1>
+        </div>
+
+        <p class="display-1">00:00:00</p>
+
+        <div class="button">
+            <button class="btn start btn-dark mx-2">start</button>
+            <button class="btn stop btn-light mx-2">stop</button>
+            <button class="btn reset btn-secondary mx-2">reset</button>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">light</label>
+              </div>
+        </div>
+       
+    </div>
+    <script>
+        let clear;
+
+        let isRunning='false';
+
+         $(document).ready(function(){
+
+            hrs=0;
+            min=0;
+            sec=0;
+
+            $('button.start').click(function(){
+
+            if(isRunning == 'false'){
+
+                clear = setInterval(function(){
+                
+                sec++;
+                if(sec>59){
+                    min++;
+                    sec=0;
+                    if(min>59){
+                        hrs++;
+                        min=0;
+                    }  
+                }
+                // $('button.btn-dark').attr('disabled','disabled')
+               display();
+
+              },1000);
+
+              isRunning='true';
+
+            }
+              
+            })
+            $('button.stop').click(function(){
+
+                clearInterval(clear);
+
+                // $('button.btn-dark').removeAttr('disabled')
+
+                display();
+
+                isRunning='false';
+
+
+            })
+            $('button.reset').click(function(){
+
+                hrs=0;min=0;sec=0;
+                
+                display();
+
+                isRunning='false';
+
+                clearInterval(clear);
+
+            })
+            function display(){
+                $('p').text(`${hrs<10? `${0}`+hrs:hrs}:${min<10? `${0}`+min:min}:${sec<10? `${0}`+sec:sec}`)
+            }
+
+            $('input').click(()=>{
+                $('div.container').toggleClass('bg-dark');
+                $('.start').toggleClass('bg-primary')
+               if($('label').text()=='light'){
+                $('label').text('dark');
+               }
+               else{
+                $('label').text('light')
+               }
+            })
+        })
+    </script>
+</body>
+</html>
