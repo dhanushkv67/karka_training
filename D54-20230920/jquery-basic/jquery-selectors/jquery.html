@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <p id="id" class="class" name="name">hi welcome!!!</p>
+    <p class="class">karka academy...</p>
+    <p class="intro" id="p-id">p with class <strong>intro</strong></p>
+    <span class="intro" >span with class <strong>intro</strong></span>
+    <button onclick="toggle1()">toggle</button>
+    <script>
+// select by id
+
+            // document.getElementById("id").innerText="hi";
+
+        $("p").text("hi dhanush...")
+
+// select by class
+
+            // document.getElementsByClassName("class")[0].innerText="hlo"
+
+        $(".class").text("hlo sir..")
+
+// select by tag
+
+            // document.getElementsByName("name")[0].innerText="hi there....."
+            // document.getElementsByTagName("p")[0].innerText="hi and hlo.."
+
+        $("p").hide()
+        
+// select by first child of parent
+
+            // document.getElementById("p-id").firstElementChild.innerText="im 1st child";
+            
+        $("#p-id strong:first-child").text("i am 1st child")
+
+// select the first p tag among more 
+
+        $("p:first").text("i am first among all")
+
+// select by even odd numbers
+
+        $("p:odd").css("color","blue");
+        $("p:even").css("background-color","pink")
+
+
+
+  
+    </script>
+</body>
+</html>

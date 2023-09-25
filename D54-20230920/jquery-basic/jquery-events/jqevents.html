@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <p>single click will hide me</p>
+    <p>double click me to hide<p>
+    <h4>let the mouse enter me i will alert u</h4>
+    <input type="text" style="display: block;">
+    <h5>i will appear and disappear while clicking button</h5>
+    <button>toggle</button>
+
+    <script>
+// click event
+
+        $(document).ready(function(){
+            $("p").click(function(){
+            //this will hide particular
+                $(this).hide(); 
+            })
+    //in 1st case click is method or function-here click is method which trigger click event
+
+    // in 2nd case on is method or function-here click is event
+            $("p").on("click", function(){
+                alert("The paragraph was clicked.");
+                });
+
+// double click
+
+            $("p").dblclick(function(){
+                $(this).hide();
+            })
+            
+// mouseenter = hover, and mouseleave
+
+            // $("h4").mouseenter(function(){
+            //     alert("i am h4 tag")
+            // })
+
+// focus and blur event
+
+            $("input").focus(function(){
+
+                // using single css style 
+                // $('input').css("background-color","pink")
+
+                // using multiple css style buy using object
+                $("input").css({"background-color":"pink","color":"white"})
+            })
+
+        // when the element get unfocused,blur() occures
+
+            $("input").blur(function(){
+                $("input").css({"background-color":"skyblue"})
+            })
+        })
+
+// toggle event used to hide and show
+
+           $("button").click(function(){
+
+            // giving the parameter milisec enables transition
+
+                $("h5").toggle(1000)
+           })
+
+// object representation is used for adding multiple event 
+// for one tagname
+
+            $("p").on({
+                mouseenter: function(){
+                    $(this).css("background-color", "lightgray");
+                },
+                mouseleave: function(){
+                    $(this).css("background-color", "lightblue");
+                },
+                click: function(){
+                    $(this).css("background-color", "yellow");
+                }
+            });
+
+       
+
+    </script>
+</body>
+</html>
