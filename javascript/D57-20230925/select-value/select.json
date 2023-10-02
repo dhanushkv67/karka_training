@@ -1,0 +1,20 @@
+{
+    "details":[
+        {
+            "name":"dhanush",
+            "place":"nagercoil",
+            "age":24
+        },
+        {
+            "name":"subin",
+            "place":"nagercoil",
+            "age":25
+        },
+        {
+            "name":"rabin",
+            "place":"vadasery",
+            "age":23
+        }
+
+]
+}

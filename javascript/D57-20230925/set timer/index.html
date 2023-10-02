@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        h2{
+            color: blueviolet;
+        }
+        h3{
+            color: rgb(76, 154, 180);
+        }
+        h4{
+            color: rgb(38, 88, 83);
+        }
+    </style>
+</head>
+<body>
+    <h1>welcome....</h1>
+    <button>click and wait</button>
+
+    <script>
+      $('button').click(()=>{
+        setTimeout(()=>{
+            $('h1').append('<h2>hi there !</h2>')
+        },2000);
+        setTimeout(()=>{
+            $('h1').append('<h3>Myself Dhanush...</h3>')
+        },3000);
+        setTimeout(()=>{
+            $('h1').append('<h4>From Nagercoil...</h4>')
+        },4000)
+      })
+      $('h1').click(()=>{
+        $('h2').delay(2000).css("color","red")
+      })
+
+    </script>
+</body>
+</html>
