@@ -1,0 +1,69 @@
+{
+  "countries": [
+    {
+      "countryName": "United States of America",
+      "states": [
+        {
+          "stateName": "California",
+          "districts": ["Los Angeles", "San Francisco", "San Diego"]
+        },
+        {
+          "stateName": "Texas",
+          "districts": ["Houston", "Dallas", "Austin"]
+        }
+      ]
+    },
+    {
+      "countryName": "United Arab Emirates",
+      "states": [
+        {
+          "stateName": "Dubai",
+          "districts": ["Bur Dubai", "Deira", "Jumeirah"]
+        },
+        {
+          "stateName": "Abu Dhabi",
+          "districts": ["Abu Dhabi City", "Al Ain", "Madinat Zayed"]
+        }
+      ]
+    },
+    {
+      "countryName": "Singapore",
+      "states": [
+        {
+          "stateName": "Central Region",
+          "districts": ["Orchard", "Marina Bay", "Novena"]
+        },
+        {
+          "stateName": "East Region",
+          "districts": ["Tampines", "Pasir Ris", "Changi"]
+        }
+      ]
+    },
+    {
+      "countryName": "Pakistan",
+      "states": [
+        {
+          "stateName": "Punjab",
+          "districts": ["Lahore", "Faisalabad", "Rawalpindi"]
+        },
+        {
+          "stateName": "Sindh",
+          "districts": ["Karachi", "Hyderabad", "Sukkur"]
+        }
+      ]
+    },
+    {
+      "countryName": "India",
+      "states": [
+        {
+          "stateName": "Maharashtra",
+          "districts": ["Mumbai", "Pune", "Nagpur"]
+        },
+        {
+          "stateName": "Tamil Nadu",
+          "districts": ["Chennai", "Coimbatore", "Madurai"]
+        }
+      ]
+    }
+  ]
+}
