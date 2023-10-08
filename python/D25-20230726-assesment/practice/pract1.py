@@ -1,6 +1,6 @@
 for i in range(5):
     print('*'*5)
-# no=int(input('enter number:'))
+no=int(input('enter number:'))
 # for i in range(no):
 #     print('*'*no)
 

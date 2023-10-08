@@ -1,0 +1,23 @@
+{
+    "details":[
+        {
+            "name":"dhanush",
+            "age":24,
+            "place":"peruvilai",
+            "district":"kk"
+        },
+        {
+            "name":"subin",
+            "age":25,
+            "place":"peruvilai",
+            "district":"kk"
+        },
+        {
+            "name":"rabin",
+            "age":23,
+            "place":"vadasery",
+            "district":"kk"
+        }
+
+    ]
+}

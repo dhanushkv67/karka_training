@@ -1,0 +1,29 @@
+
+*{
+    margin:0px;
+    padding:0px
+}
+body{
+    background-color: aqua;
+}
+@media only screen and (max-width:1200px){
+    body{
+        background-color: blue;
+    }
+}
+
+@media only screen and (max-width:992px){
+    body{
+        background-color:green;
+    }
+}
+@media only screen and (max-width:776npx){
+    body{
+        background-color: red;
+    }
+}
+@media only screen and (max-width:556px){
+    body{
+        background-color:orange ;
+    }
+}
