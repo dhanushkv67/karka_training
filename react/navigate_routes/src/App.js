@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter,Routes,Route,Link,useLocation} from 'react-router-dom';
-import Home from './components/home.js'
-import About from './components/about'
-import Contact from './components/contact'
-import GetUrl from './components/url';
+import Home from './routes/home.js'
+import About from './routes/about'
+import Contact from './routes/contact'
+import GetUrl from './routes/url';
 
 function App() {
   return (
