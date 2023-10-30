@@ -6,10 +6,11 @@ import Execute from './events/propsevents/execute';
 function App() {
   return (
    <div className="App">
-    <Click_function/>
-    <Execute/>
+      <Click_function/>
+      <Execute/>
    </div>
   );
 }
 
 export default App;
+ 

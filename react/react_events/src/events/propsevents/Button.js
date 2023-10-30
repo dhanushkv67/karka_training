@@ -8,7 +8,7 @@ export default function Button(props){
     return(
        
         <button onClick={props.data}>
-            {props.children}
+            {props.ch}
         </button>
     )
 }

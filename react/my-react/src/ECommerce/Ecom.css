@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.left{
+    background-color: aliceblue;
+    width: 35%;
+    box-shadow: 0 0 2px 0px gray;
+}
+.left button{
+    padding: 10px;
+    border-radius: 50px;
+    margin: 10px;
+}
+.section{
+    flex-grow: 1;
+    background-color: aliceblue;
+    display: flex;
+    box-shadow: 0 0 10px 0 gray;
+}
+img{
+    width: 100%;
+}
+.cart{
+    position: fixed;
+    left: 987px;
+    top: 1px;
+    width: 35%;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: antiquewhite;
+}
+.cartCard{
+    background-color: aliceblue;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+.cartSubTtl{
+    position: fixed;
+    height: 200px;
+    width:35%;
+    left: 987px;
+    top:620px;
+    background-color: bisque;
+    border: 2px solid black;
+    border-radius: 10px;
+}
