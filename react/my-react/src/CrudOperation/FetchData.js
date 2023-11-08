@@ -2,6 +2,10 @@
     import ReactTable from './ReactTable';
     import './style.css'
     import { useLocation, useNavigate } from 'react-router-dom';
+    import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+    import {faUser,faLock,faEnvelope,faFile} from '@fortawesome/free-solid-svg-icons'
+
+    // login form
 
     const FetchData = () => {
         const [newUser, setNewUser] = useState({
@@ -125,6 +129,7 @@
         
         
         function handleCreate(){
+            
             const maxId = Math.max(...details.map((data)=>data.id))
             const newId = maxId+1
             const userWitId = {...newUser,id:newId}
@@ -177,16 +182,29 @@
 
         return (
             <div className=' bg-light p-5 loginOutline'style={{width:'1500px',height:'100vh'}} >
-                {/* <ReactTable data={details}/> */}
                 <div className='formdiv' onChange={handleChange}>
                     <h1 className='my-4 border-bottom'>Register form</h1>
-                    <input type='text' name='first_name' placeholder='firstName' value={newUser.first_name}></input>
-                    <input type='text' name='last_name' placeholder='lastName' value={newUser.last_name}></input>
-                    <input type='email' name='email' placeholder='email' value={newUser.email}></input>
-                    <input type='text' name='password' placeholder='password' value={newUser.password}></input>
-                    <input type='file' name='avatar' placeholder='add avatar'></input>
+                    <div className="input-icon">
+                        <FontAwesomeIcon className='fontaswm' icon={faUser} />
+                        <input type='text' name='first_name' placeholder='First Name' value={newUser.first_name}></input>
+                    </div>
+                    <div className="input-icon ">
+                        <FontAwesomeIcon className='fontaswm' icon={faUser} />
+                        <input type='text' name='last_name' placeholder='Last Name' value={newUser.last_name} ></input>
+                    </div>
+                    <div className="input-icon">
+                        <FontAwesomeIcon className='fontaswm' icon={faEnvelope} />
+                        <input type='email' name='email' placeholder='Email' value={newUser.email}></input>
+                    </div>
+                    <div className="input-icon">
+                        <FontAwesomeIcon className='fontaswm' icon={faLock} />
+                        <input type='text' name='password' placeholder='Password' value={newUser.password}></input>
+                    </div>
+                    <div className="input-icon">
+                        <input type='file' name='avatar' placeholder='Add Avatar'></input>
+                    </div>
                     <hr></hr>
-                    <button className='btn bg-primary bg-opacity-75 w-100' onClick={editBool?handleEdit:handleCreate}>submit</button>
+                    <button className='btn bg-primary bg-opacity-75 w-100' onClick={editBool ? handleEdit : handleCreate}>Submit</button>
                 </div>
                 {showPopup && (
                 <div className="popup">

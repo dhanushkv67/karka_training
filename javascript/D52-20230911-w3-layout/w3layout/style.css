@@ -5,7 +5,9 @@
     font-family:sans-serif;
     box-sizing: border-box;
 }
-
+body{
+    background-color: #282a35e0 !important;
+}
 header{
     background-color: #1d2a35;
     position: fixed;
@@ -134,9 +136,12 @@ section{
 .section1{
     background-color: #282A35;
     border-radius: 0 0 300px 0;
-    height: 520px;
-    width: 107%;
+    height: 620px;
+    width: 1300px;
     position: relative;
+    box-shadow: 0 0 10px 0 white;
+    /* border: 1px solid rgba(255, 255, 255, 0.915); */
+    /* margin-right: 2000px; */
     /* border-left: 40px solid #282A35; */
 }
 .section1 img{

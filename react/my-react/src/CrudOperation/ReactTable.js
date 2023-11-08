@@ -60,7 +60,8 @@ const ReactTable = () => {
                 );
 const  pageCount = Math.ceil(data.length/pageSize)
   return (
-     <div className='tablediv'>
+     <div className='bg-light p-2' style={{width:"1500px",height:"100vh"}}>
+        <div className='tablediv mx-auto border border-dark rounded shadow'>
         <div className=" w-100 mx-auto">
             {/* global filter */}
             <input type="text" value={state.globalFilter || ''} onChange={(e)=>{setGlobalFilter(e.target.value)}} placeholder="search here" className="bg-primary bg-opacity-50"></input>
@@ -129,7 +130,8 @@ const  pageCount = Math.ceil(data.length/pageSize)
                             {pageIndex + 1} of {pageCount}
                         </span>
                     </div>
-    </div>
+        </div>
+     </div>
 
   )
 }

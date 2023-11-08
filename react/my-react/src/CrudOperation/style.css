@@ -8,7 +8,16 @@
     box-shadow: 0 0 10px 0 grey;
 }
 .formdiv input{
-    background-color: #E8F0FE;
+    background-color: #E8F0FE; 
+}
+.input-icon{
+    position: relative;
+}
+.fontaswm{
+    position: absolute;
+    top:32px;
+    z-index: 1;
+    margin:0px 10px
 }
 .popup{
     position: absolute;
