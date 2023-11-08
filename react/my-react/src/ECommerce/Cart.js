@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Cart({ items }) {
+export default function Cart({ items,setCart }) {
   const [display, setDisplay] = useState(false);
   const [count, setCount] = useState({});
 
@@ -15,8 +15,27 @@ export default function Cart({ items }) {
   function handleDecreaseCount(img1) {
     if (count[img1] > 0) {
       setCount((prev) => ({ ...prev, [img1]: prev[img1] - 1 }));
+    } else {
+      setCart((prevItems) => 
+        prevItems.map((item) => {
+          if(item.img1 == img1){
+            return({
+              ...item,quantity:item.quantity>0?item.quantity-1:0
+            })
+          }else{
+            return item
+          }
+        }
+        )
+      );
     }
   }
+  function handleDelete(img1){
+    setCart((prev)=>{
+      return  (prev.filter((item)=>item.img1!=img1))
+    })
+  }
+  
 
   return (
     <div>
@@ -47,7 +66,7 @@ export default function Cart({ items }) {
                 </div>
               </div>
               <div className="d-flex flex-column gap-1">
-                <button className="btn btn-dark">Delete</button>
+                <button className="btn btn-dark" onClick={()=>{handleDelete(item.img1)}}>Delete</button>
                 <br></br>
                 <div>
                   <button className="btn btn-info me-2" onClick={() => handleIncreaseCount(item.img1)}>+</button>
@@ -64,9 +83,12 @@ export default function Cart({ items }) {
         </div>
       ) : (
         <div>
-          <button className="btn btn-dark ms-5" onClick={handleClick}>
+          <button className="btn btn-dark ms-5 visibleCart" onClick={handleClick}>
             Cart
           </button>
+          <span className="btn btn-dark text-light">
+            {items.length}
+          </span>
         </div>
       )}
     </div>

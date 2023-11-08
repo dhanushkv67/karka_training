@@ -13,7 +13,7 @@ export default function Mainsite() {
       <div className="left">
         <FilterImg onclick={setSizeFilter} />
       </div>
-      <div className="section row">
+      <div className="section row flex-1">
         {sizeFilter
           ? image.filter(i => i.size === sizeFilter).map(i => (
               <ImgCard key={i.img1} {...i} addToCart={setCart} cart={cart} />
@@ -22,8 +22,8 @@ export default function Mainsite() {
               <ImgCard key={i.img1} {...i} addToCart={setCart} cart={cart} />
             ))}
       </div>
-      <div className="right w-25">
-        <Cart items={cart} />
+      <div className="right w-5">
+        <Cart items={cart} setCart={setCart}/>
       </div>
     </div>
   );

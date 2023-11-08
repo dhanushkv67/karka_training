@@ -21,6 +21,7 @@
 img{
     width: 100%;
 }
+
 .cart{
     position: fixed;
     left: 987px;
@@ -28,12 +29,15 @@ img{
     width: 35%;
     height: 100vh;
     overflow-y: auto;
-    background-color: antiquewhite;
+    background-color: antiquewhite; 
+   
+    
 }
 .cartCard{
     background-color: aliceblue;
     border: 1px solid grey;
     border-radius: 10px;
+
 }
 .cartSubTtl{
     position: fixed;

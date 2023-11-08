@@ -15,6 +15,12 @@ import FormRedirect from './FormComponent/FormRedirect';
 import TodoComp from './TodoComponent/todocomp';
 import InputBox from './RefComp/InputBox';
 import Mainsite from './ECommerce/Mainsite';
+import FetchCompo from './FetchComponent/FetchCompo';
+import { Dispaly } from './AdminFormCompo/Display';
+import Search from './assesment/Search';
+import Faquestion from './assesment/Faquestion';
+import FetchData from './CrudOperation/FetchData';
+import Display from './CrudOperation/Display';
 
 
 function App() {
@@ -38,7 +44,14 @@ function App() {
      </BrowserRouter> */}
      {/* <TodoComp/> */}
      {/* <InputBox/> */}
-     <Mainsite/>
+     {/* <Mainsite/> */}
+     {/* <FetchCompo/> */}
+     {/* <Dispaly/> */}
+     {/* <Search/> */}
+     {/* <Faquestion/> */}
+     <Display/>
+     
+
      
     </div>
   );
