@@ -17,9 +17,10 @@
         }
         .todoContainer{
             width: 100%;
-            height: 200px;
-            /* background-color: red                                                                                                                            */
+            padding-bottom: 40px;
+            /* background-color: red*/
         }
+        
     </style>
 </head>
 <body class="bg-light">
@@ -55,8 +56,11 @@
         function addToDoItem(){
             console.log('add function called');
             let todo = document.getElementById("todoInputBox").value;
+
+            let maxId = todoList.length > 0 ? Math.max(...todoList.map((data) => data.id)) + 1 : 1
+
             if(todo.length){
-                todoList.push({"id":todoList.length, "todo": todo, "status": "not-done" });
+                todoList.push({"id":maxId , "todo": todo, "status": "not-done" });
                 document.getElementById("todoInputBox").value = "";
                 localStorage.setItem('todos', JSON.stringify(todoList));
                 // document.getElementById("todoInputBox").reset();
