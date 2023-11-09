@@ -38,7 +38,7 @@ export default function Cart({ items,setCart }) {
   
 
   return (
-    <div>
+    <div className="bg-dark">
       {display ? (
         <div className="cart">
           <button onClick={handleClick} className="btn btn-dark">
@@ -82,11 +82,11 @@ export default function Cart({ items,setCart }) {
           </div>
         </div>
       ) : (
-        <div>
-          <button className="btn btn-dark ms-5 visibleCart" onClick={handleClick}>
+        <div className="bg-dark">
+          <button className="btn btn-light ms-5 visibleCart" onClick={handleClick}>
             Cart
           </button>
-          <span className="btn btn-dark text-light">
+          <span className="btn btn-light text-dark">
             {items.length}
           </span>
         </div>

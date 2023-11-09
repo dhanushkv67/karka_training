@@ -56,7 +56,14 @@ export const image = [
         img1:'/images/boy7.png',
         img2:'/images/boy7.png',
     },
-
+    {
+        brand:'Marron T-shirt',
+        gender:'man',
+        price:15,
+        size:'L',
+        img1:'/images/boy2.png',
+        img2:'/images/boy21.png',
+    },
 
 
 ]

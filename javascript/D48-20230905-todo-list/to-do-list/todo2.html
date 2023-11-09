@@ -22,13 +22,13 @@
         }
     </style>
 </head>
-<body class="bg-indigo" >
+<body class="bg-light">
    
-    <div class="container">
-        <div class="w-75 mx-auto" id="notification-container"> </div>
+    <div class=" mx-auto border w-50 mt-5 bg-white rounded">
+        <div class="w-100 mx-auto" id="notification-container"> </div>
 
         <h1 class="text-center mt-5 text-primary"> Todo   </h1>
-        <div class="input-group mb-3 w-50 mx-auto mt-3">
+        <div class="input-group mb-3 w-75 mx-auto mt-3">
             <input type="text" id="todoInputBox" class="form-control text-center text-primary border-primary" placeholder=" Enter the todo item..." aria-describedby="button-addon2" >
             <button type="button" class="btn btn-outline-primary"  onclick="addToDoItem()" id="clear_control_button">Add ToDo</button>
             <!-- <button type="button" class="btn btn-primary rounded" onClick="clearControlItem()" >Clear Completed</button> -->
@@ -76,7 +76,7 @@
         function showToDoItems(){
             if(todoList.length){
                 var ele="";
-                document.getElementById("todoConatiner" ).innerHTML= '<ul class="list-group w-50 mx-auto" id="todoResult"></ul>'
+                document.getElementById("todoConatiner" ).innerHTML= '<ul class="list-group w-75 mx-auto" id="todoResult"></ul>'
 
 
                 for(let i=0; i<todoList.length;i++){

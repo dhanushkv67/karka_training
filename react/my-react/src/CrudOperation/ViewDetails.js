@@ -21,9 +21,9 @@ export default function ViewDetails() {
 
     return (
         <div className="viewmaindiv">
-            <div className="viewdetails">
+            <div className="viewdetails ">
                 <img src={details.avatar} alt="User Avatar" />
-                <div className="w-50 fs-4 text-start">
+                <div className="w-50 fs-4 text-start ">
                     <p className="fw-bold">Name:</p>
                     <p className="ms-5">{details.first_name} {details.last_name}</p>
                     <p className="fw-bold">Email:</p>

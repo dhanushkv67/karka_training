@@ -13,7 +13,7 @@
         <h1>resume builder</h1>
     </header>
     <section>
-    <form action="resume.css" >
+    <form action="resume1.html" onsubmit="get(e)" >
         <div class="name box">
             <div class="1stname">
                 <p>FIRST NAME</p>
@@ -231,14 +231,15 @@
             </div>
         </div>
         <!-- <button onclick="get()">submit</button> -->
-        <input type="submit" value="submit" class="submit" onclick="get()">
+        <input type="submit" value="submit" class="submit"/>
     </form>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js
     "></script>
     <script>
         
-        function get(){
+        function get(e){
+            e.preventDefault()
             data1={}
             var input=document.querySelectorAll("input");
             input.forEach(input =>{

@@ -30,7 +30,7 @@ const CardView = () => {
         return(
         <div key={index} className="card col-3 mx-5 my-2 p-2" style={{width: "15rem"}}>
             <div className='overflow-hidden'style={{height:"200px"}}>
-            <img src={info.avatar} className="card-img-top mx-auto" alt="..." style={{width:"12rem"}}/>
+            <img src={info.avatar} className="card-img-top mx-auto" alt="..." style={{width:"12rem",height:"250px"}}/>
             </div>
             <div className="card-body">
                 <h5 className="card-title">{info.first_name} {info.last_name}</h5>

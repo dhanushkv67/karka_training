@@ -6,7 +6,9 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #282a35e0 !important;
+    background-color: #D9EEE1 !important;
+    /* overflow-x:hidden; */
+
 }
 header{
     background-color: #1d2a35;
@@ -25,6 +27,7 @@ header{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    margin: 0px 25px;
 }
 .search{
     width:186px;
@@ -131,15 +134,19 @@ section{
     margin-top: 90px;
     width: 100%;
     min-width: 567px;
-    max-width: 1256px;
+    /* max-width: 1256px; */
+ 
 }
 .section1{
     background-color: #282A35;
     border-radius: 0 0 300px 0;
-    height: 620px;
-    width: 1300px;
+    margin-top: 80px;
+    padding-top: 20px;
+    height: 720px;
+    /* width: 1500px; */
+    width: 100%;
     position: relative;
-    box-shadow: 0 0 10px 0 white;
+    /* box-shadow: 0 0 10px 0 white; */
     /* border: 1px solid rgba(255, 255, 255, 0.915); */
     /* margin-right: 2000px; */
     /* border-left: 40px solid #282A35; */

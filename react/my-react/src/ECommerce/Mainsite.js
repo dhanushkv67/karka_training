@@ -9,7 +9,8 @@ export default function Mainsite() {
   const [cart, setCart] = useState([]);
 
   return (
-    <div className="d-flex flex-row w-100 border p-5 bg-light rounded mt-5">
+   
+      <div className="d-flex flex-row w-100  p-5 rounded  bg-dark">
       <div className="left">
         <FilterImg onclick={setSizeFilter} />
       </div>
@@ -22,10 +23,11 @@ export default function Mainsite() {
               <ImgCard key={i.img1} {...i} addToCart={setCart} cart={cart} />
             ))}
       </div>
-      <div className="right w-5">
+      <div className="right w-5 bg-dark">
         <Cart items={cart} setCart={setCart}/>
       </div>
     </div>
+    
   );
           }
 
@@ -61,12 +63,12 @@ function ImgCard({ img1, img2, brand, description, price, addToCart, cart }) {
   }
 
   return (
-    <div className="col-3 p-3" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-      <img src={imgHover ? img2 : img1} alt={brand} />
+    <div className="col-3 p-2 border" style={{}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+      <img src={imgHover ? img2 : img1} alt={brand}  />
       <div>
         <h5>{brand}</h5>
         <p>{description}</p>
-        <bold>{price}</bold>
+        <bold className="fw-bold">₹{price}.00</bold>
       </div>
       <button className={imgHover ? "btn btn-warning" : "btn btn-dark"} onClick={() => { handleClick(img1) }}>Add To Cart</button>
     </div>

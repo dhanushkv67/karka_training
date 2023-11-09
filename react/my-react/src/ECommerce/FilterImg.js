@@ -10,19 +10,19 @@ export default function FilterImg({onclick}){
     return(
         <div>
             <div>
-                <button>Boys</button>
-                <button>Girls</button>
+                <button className="btn btn-light">Boys</button>
+                <button className="btn btn-light">Girls</button>
             </div>
             <div onClick={handleClick}>
                 <h1>Sizes:</h1>
                 
                 <br></br>
-                <button>XXL</button>
-                <button>XL</button>
-                <button>L</button>
-                <button>M</button>
-                <button>S</button>
-                <button>All</button>
+                <button className="btn btn-light">XXL</button>
+                <button className="btn btn-light">XL</button>
+                <button className="btn btn-light">L</button>
+                <button className="btn btn-light">M</button>
+                <button className="btn btn-light">S</button>
+                <button className="btn btn-light">All</button>
             </div>
         </div>
     )
