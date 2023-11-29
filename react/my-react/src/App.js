@@ -21,6 +21,11 @@ import Search from './assesment/Search';
 import Faquestion from './assesment/Faquestion';
 import FetchData from './CrudOperation/FetchData';
 import Display from './CrudOperation/Display';
+import RegisterPage from './ChatApp/RegisterPage';
+import Home from './ChatApp/Home';
+import Parent from './PropsDrilling/PropsDrill';
+import PostsList from './Redux/features/posts/postsList';
+
 
 
 function App() {
@@ -49,7 +54,11 @@ function App() {
      {/* <Dispaly/> */}
      {/* <Search/> */}
      {/* <Faquestion/> */}
-     <Display/>
+     {/* <Display/> */}
+      <Home/>
+      {/* <Parent/> */}
+      {/* <PostsList/> */}
+     
      
 
      

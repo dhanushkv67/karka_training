@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* register */
+.backgroundImg{
+    background-image: url("C:\Users\Dhanush\Downloads\blue-curve-background\rm222batch2-mind-03.jpg")
+}
+input{
+    background-color: rgba(240, 248, 255, 0.635);
+}
+.boxShadow{
+    box-shadow: 0 0 10px 0 grey;
+}
+label{
+    font-size: 18px;
+}
+/* login */
+.login{
+    background-image: url("c:\Users\Dhanush\Downloads\abstract-bright-light-background\5143237.jpg");
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infiniteAnimate{
+    animation: fadeInOut 1s infinite;
+}
+@keyframes fadeInOut {
+    from{
+        opacity: 0;
+        transform: translate(5px,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px,0);
+    }
+}y
+/* chat */
+.chatTrue{
+    text-align: end;
+    border-radius: 0 20px 0 0;
+    background-color: antiquewhite;
+}
+.chatFalse{
+    text-align: start;
+    border-radius: 0px 15px 0 0;
+}
+.transition{
+    animation: fadeInUpmsg 0.5s ease-out;
+}
+@keyframes fadeInUpmsg {
+    from{
+        opacity: 0.5;
+        transform: translate(0,15px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+.pop {
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    /* color: white; */
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeInUppop 0.5s ease-out;
+   
+  }
+  
+    @keyframes fadeInUppop {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -30%);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }  
+
+/* scroll bar */
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color of the scrollbar thumb on hover */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #eee; /* Color of the scrollbar track */
+  }
+  
+  

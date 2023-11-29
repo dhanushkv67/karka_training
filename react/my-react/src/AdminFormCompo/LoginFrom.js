@@ -25,6 +25,7 @@ export default function LoginForm(){
             }
             else if(loginData.username == 'admin'){
                 navigate('/adminTable')
+                console.log('admin')
             }
         })
     }

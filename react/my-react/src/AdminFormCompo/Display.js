@@ -5,7 +5,7 @@ import { BrowserRouter,Route,Routes } from "react-router-dom";
 import './form.css'
 import RegistrationForm from "./RegistrationForm";
 import DetailsComponent from "./DetailsComponent";
-export function Dispaly(){
+export  function Dispaly(){
     return(
         <BrowserRouter>
         <Routes>

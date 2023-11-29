@@ -10,8 +10,10 @@ class manager(employee):
         self.department=''
     def display(self):
         print(self.name,self.salary,self.department)
-dhanu=manager('dhanush')
-# dhanu.name='dhanush'
+dhanu=manager('devop','dhanush')
+dhanu.name='dhanush'
 dhanu.salary=24,000
 dhanu.department='devop'
 dhanu.display()
+# dhanush = employee()
+# print(dhanush)

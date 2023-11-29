@@ -11,12 +11,12 @@
 
 </head>
 <body>
-    <div class="container bg-secondary w-50 p-3 mb-3 d-flex">
+    <div class="container bg-secondary w-50 p-3 mb-3 d-flex" id="1stdiv">
         <div>
                 <h1 id="disappear">hello there!!!</h1><hr/>
                 
                 <p id="p1">single or double click will hide me</p>
-                <p id="show"></p>
+                <p id="show" style="color: aliceblue;"></p>
                 <span>First Name:</span><input type="text" class="form-control w-50 fname">
                 <span>Last Name:</span><input type="text" class="form-control w-50 sname">
 
@@ -51,6 +51,9 @@
             $('#fname').click(()=>{
             let name =  $('.fname').val() +"  "+ $('.sname').val();
             $('#name').text('welcome  '+name)
+            })
+            document.getElementById('1stdiv').addEventListener('click', function(e) {
+            console.log(e.target); // This will log the button element if clicked, not the div
             })
 
         })

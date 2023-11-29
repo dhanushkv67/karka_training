@@ -64,7 +64,7 @@ function ImgCard({ img1, img2, brand, description, price, addToCart, cart }) {
 
   return (
     <div className="col-3 p-2 border" style={{}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-      <img src={imgHover ? img2 : img1} alt={brand}  />
+      <img src={imgHover ? img2 : img1} alt={brand}  /> 
       <div>
         <h5>{brand}</h5>
         <p>{description}</p>

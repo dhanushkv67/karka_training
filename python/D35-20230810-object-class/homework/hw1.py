@@ -1,6 +1,6 @@
 class goa:
     # def __init__(self):
-        # print('dhanu')
+    #     print('dhanu')
     name=''
     drink=''
     def info(self):
@@ -9,7 +9,7 @@ dhanu=goa()
 dhanu.name='dhanush'
 dhanu.drink='yes'
 # print(dhanu.name)
-dhanu.info()
-sg=goa()
-sg.info()
+# dhanu.info()
+# sg=goa()
+# sg.info()
 

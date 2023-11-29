@@ -18,11 +18,9 @@ const CardView = () => {
             fetch(`https://reqres.in/api/users/${info.id}`,{
                 method:"DELETE"
             })
-            .then(data=>console.log(data))
-
-        
+            .then(data=>console.log(data))  
     }
-  return (
+  return (  
     <div className=' my-3 bg-dark p-2'>
         <h1 className='text-light'>Details</h1>
         <div className=' bg-primary bg-opacity-25 rounded row d-flex justify-content-around border p-4 w-100 mx-auto'>
